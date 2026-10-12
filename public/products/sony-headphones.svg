@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="glowHp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00f5a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headband" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="earcupLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="cushion" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="200" r="160" fill="url(#glowHp)"/>
+
+  <!-- Headband Arch -->
+  <path d="M 125 210 C 125 100, 275 100, 275 210" stroke="url(#headband)" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M 140 170 C 140 115, 260 115, 260 170" stroke="#0f172a" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- Left Hinge / Yoke -->
+  <path d="M 120 190 L 120 240" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+  <!-- Right Hinge / Yoke -->
+  <path d="M 280 190 L 280 240" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Left Earcup Cushion (Angled) -->
+  <ellipse cx="120" cy="245" rx="30" ry="46" fill="url(#cushion)" stroke="#1e293b" stroke-width="2"/>
+  <!-- Left Outer Shell -->
+  <ellipse cx="112" cy="245" rx="24" ry="40" fill="url(#earcupLeft)" stroke="#475569" stroke-width="1.2"/>
+  <circle cx="112" cy="245" r="10" fill="#020617" stroke="#00f5a0" stroke-width="1" opacity="0.8"/>
+
+  <!-- Right Earcup Cushion (Angled) -->
+  <ellipse cx="280" cy="245" rx="30" ry="46" fill="url(#cushion)" stroke="#1e293b" stroke-width="2"/>
+  <!-- Right Outer Shell -->
+  <ellipse cx="288" cy="245" rx="24" ry="40" fill="url(#earcupLeft)" stroke="#475569" stroke-width="1.2"/>
+  <circle cx="288" cy="245" r="10" fill="#020617" stroke="#00f5a0" stroke-width="1" opacity="0.8"/>
+
+  <!-- Gold/Teal Accent Badge -->
+  <rect x="135" y="295" width="130" height="26" rx="8" fill="#020617" fill-opacity="0.9" stroke="#00f5a0" stroke-width="1"/>
+  <text x="200" y="312" text-anchor="middle" fill="#00f5a0" font-family="-apple-system, sans-serif" font-weight="bold" font-size="10">ANC TESTED •; GRADE B</text>
+</svg>

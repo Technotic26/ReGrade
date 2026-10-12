@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="apCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="apLid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <radialGradient id="apShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Soft Studio Floor Shadow -->
+  <ellipse cx="200" cy="330" rx="90" ry="18" fill="url(#apShadow)"/>
+
+  <!-- Charging Case Open Base -->
+  <rect x="120" y="160" width="160" height="130" rx="36" fill="url(#apCase)" stroke="#cbd5e1" stroke-width="1.5" filter="drop-shadow(0 8px 16px rgba(15,23,42,0.08))"/>
+  
+  <!-- Hinge Seam -->
+  <line x1="130" y1="180" x2="270" y2="180" stroke="#94a3b8" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Status LED Light -->
+  <circle cx="200" cy="225" r="3" fill="#10b981"/>
+
+  <!-- Left Earbud (Stem Extended Upwards) -->
+  <g transform="translate(-15, -20)">
+    <!-- Earbud Stem -->
+    <rect x="165" y="110" width="12" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="168" y="162" width="6" height="4" rx="1" fill="#94a3b8"/>
+    <!-- Head / Eartip -->
+    <ellipse cx="160" cy="115" rx="18" ry="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <ellipse cx="150" cy="115" rx="9" ry="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+    <!-- Acoustic Mesh Vent -->
+    <ellipse cx="165" cy="110" rx="3" ry="5" fill="#334155"/>
+  </g>
+
+  <!-- Right Earbud (Stem Extended Upwards) -->
+  <g transform="translate(15, -20)">
+    <!-- Earbud Stem -->
+    <rect x="223" y="110" width="12" height="60" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="226" y="162" width="6" height="4" rx="1" fill="#94a3b8"/>
+    <!-- Head / Eartip -->
+    <ellipse cx="240" cy="115" rx="18" ry="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <ellipse cx="250" cy="115" rx="9" ry="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+    <!-- Acoustic Mesh Vent -->
+    <ellipse cx="235" cy="110" rx="3" ry="5" fill="#334155"/>
+  </g>
+
+  <!-- Clean Verification Indicator Badge -->
+  <rect x="135" y="325" width="130" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.04))"/>
+  <circle cx="150" cy="338" r="4" fill="#0d9488"/>
+  <text x="160" y="342" fill="#0f172a" font-family="-apple-system, sans-serif" font-weight="700" font-size="9">GRADE A •; ANC 100%</text>
+</svg>

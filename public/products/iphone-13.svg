@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="phoneBodyLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="40%" stop-color="#0d9488"/>
+      <stop offset="80%" stop-color="#115e59"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+    <linearGradient id="metallicFrame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Studio Floor Shadow -->
+  <ellipse cx="200" cy="355" rx="85" ry="14" fill="url(#floorShadow)"/>
+
+  <!-- Phone Outer Metallic Edge -->
+  <rect x="120" y="45" width="160" height="300" rx="36" fill="url(#metallicFrame)" stroke="#94a3b8" stroke-width="1" filter="drop-shadow(0 12px 24px rgba(15,23,42,0.12))"/>
+
+  <!-- Phone Inner Chassis -->
+  <rect x="123" y="48" width="154" height="294" rx="33" fill="url(#phoneBodyLight)"/>
+
+  <!-- Screen Bezel -->
+  <rect x="127" y="52" width="146" height="286" rx="29" fill="#020617"/>
+
+  <!-- Screen Wallpaper (OLED Deep Teal Wave) -->
+  <rect x="129" y="54" width="142" height="282" rx="27" fill="url(#screenGrad)"/>
+
+  <!-- Dynamic Island / Top Notch -->
+  <rect x="175" y="62" width="50" height="14" rx="7" fill="#000000"/>
+  <circle cx="214" cy="69" r="3" fill="#0f172a" stroke="#334155" stroke-width="0.8"/>
+
+  <!-- Screen UI Mockup Elements -->
+  <text x="200" y="112" text-anchor="middle" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="28" letter-spacing="-0.5">09:41</text>
+  <text x="200" y="128" text-anchor="middle" fill="#ccfbf1" font-family="-apple-system, system-ui, sans-serif" font-weight="500" font-size="10">Thursday, Sep 4</text>
+
+  <!-- Minimal Inspection Pill on Phone Display -->
+  <rect x="144" y="248" width="112" height="46" rx="12" fill="#020617" fill-opacity="0.88" stroke="#0d9488" stroke-width="1"/>
+  <circle cx="158" cy="264" r="4" fill="#10b981"/>
+  <text x="168" y="267" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="700" font-size="10">GRADE A •; 96%</text>
+  <text x="154" y="284" fill="#94a3b8" font-family="-apple-system, system-ui, sans-serif" font-size="8">Display 100% Scratch-Free</text>
+
+  <!-- Home Indicator Bar -->
+  <rect x="170" y="326" width="60" height="3" rx="1.5" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Side Hardware Buttons -->
+  <rect x="117" y="100" width="3" height="22" rx="1.5" fill="#64748b"/>
+  <rect x="117" y="130" width="3" height="22" rx="1.5" fill="#64748b"/>
+  <rect x="280" y="110" width="3" height="36" rx="1.5" fill="#64748b"/>
+</svg>

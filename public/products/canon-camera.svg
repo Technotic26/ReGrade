@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="glowCam" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00f5a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cameraBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="40%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <radialGradient id="lensGlass" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#0d9488"/>
+      <stop offset="70%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="200" r="160" fill="url(#glowCam)"/>
+
+  <!-- Main Camera Body -->
+  <rect x="70" y="120" width="260" height="170" rx="20" fill="url(#cameraBody)" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Top EVF / Hotshoe Pentaprism Bump -->
+  <path d="M 150 120 L 165 85 L 235 85 L 250 120 Z" fill="#1e293b" stroke="#475569" stroke-width="1.2"/>
+  <rect x="180" y="80" width="40" height="6" rx="2" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+
+  <!-- Right Handgrip Contour -->
+  <rect x="72" y="130" width="50" height="150" rx="14" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+  <!-- Grip Texture Lines -->
+  <line x1="85" y1="150" x2="85" y2="260" stroke="#1e293b" stroke-width="2" stroke-dasharray="3 3"/>
+  <line x1="95" y1="150" x2="95" y2="260" stroke="#1e293b" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Shutter Button & Dial -->
+  <rect x="85" y="105" width="24" height="16" rx="4" fill="#64748b"/>
+  <rect x="260" y="108" width="30" height="12" rx="3" fill="#475569"/>
+
+  <!-- Outer Lens Mount Barrel Ring -->
+  <circle cx="215" cy="205" r="75" fill="#0f172a" stroke="#64748b" stroke-width="3"/>
+  <circle cx="215" cy="205" r="66" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="215" cy="205" r="56" fill="#020617"/>
+
+  <!-- Lens Glass Element with Coating Reflections -->
+  <circle cx="215" cy="205" r="50" fill="url(#lensGlass)"/>
+  <ellipse cx="200" cy="190" rx="20" ry="10" fill="#ffffff" opacity="0.3" transform="rotate(-30 200 190)"/>
+
+  <!-- Red Ring / Badge Accent -->
+  <circle cx="215" cy="205" r="73" stroke="#ef4444" stroke-width="1.5" fill="none"/>
+
+  <!-- ReGrade Inspection Overlay -->
+  <rect x="100" y="270" width="130" height="24" rx="6" fill="#020617" fill-opacity="0.9" stroke="#00f5a0" stroke-width="1"/>
+  <text x="165" y="286" text-anchor="middle" fill="#00f5a0" font-family="-apple-system, sans-serif" font-weight="bold" font-size="9">SENSOR &amp; OPTICS: GRADE B</text>
+</svg>

@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #090d16;
-    --foreground: #f1f5f9;
-  }
+  --background: #faf8f4;
+  --foreground: #26231f;
 }
 
 body {
@@ -20,4 +13,73 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   min-height: 100vh;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  color: #ffffff;
+  background: #d96532;
+}
+
+html.dark {
+  color-scheme: dark;
+  --background: #1d1916;
+  --foreground: #f4eee8;
+}
+
+html.dark body {
+  background: #1d1916;
+  color: #f4eee8;
+}
+
+/* Shared ReGrade dark surfaces. These selectors deliberately target the warm
+   utility classes used by the landing, browse, and category pages. */
+html.dark [class*="bg-[#faf8f4]"],
+html.dark [class*="bg-white"],
+html.dark [class*="bg-[#fffdfa]"],
+html.dark [class*="bg-[#fffaf6]"] {
+  background-color: #24201c !important;
+}
+
+html.dark [class*="bg-[#f1ebe4]"],
+html.dark [class*="bg-[#f4efe9]"],
+html.dark [class*="bg-[#f2ede6]"],
+html.dark [class*="bg-[#eee6de]"] {
+  background-color: #302922 !important;
+}
+
+html.dark [class*="bg-[#26231f]"] {
+  background-color: #151210 !important;
+}
+
+html.dark [class*="border-[#e4dbd2]"],
+html.dark [class*="border-[#e2d9cf]"],
+html.dark [class*="border-[#ded3c9]"],
+html.dark [class*="border-[#e8e1d8]"],
+html.dark [class*="border-[#e5ddd5]"] {
+  border-color: #4b4036 !important;
+}
+
+html.dark [class*="text-[#26231f]"],
+html.dark [class*="text-[#25231f]"],
+html.dark [class*="text-[#302b27]"],
+html.dark [class*="text-[#302c28]"],
+html.dark [class*="text-[#352f2a]"] {
+  color: #f4eee8 !important;
+}
+
+html.dark [class*="text-[#716960]"],
+html.dark [class*="text-[#776e65]"],
+html.dark [class*="text-[#776d65]"],
+html.dark [class*="text-[#756b63]"] {
+  color: #c7bdb4 !important;
+}
+
+html.dark input {
+  color: #f4eee8 !important;
+  background: #24201c !important;
+}
+
+html.dark input::placeholder {
+  color: #a99e94;
 }
